@@ -1,10 +1,9 @@
-'use strict';
-import './css/styles.css';
-import { CountdownTimer } from './js/timer.js';
+import './styles.css';
+import { CountdownTimer } from './js/countdownTimer';
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: '1 Jan 2021',
+  targetDate: new Date('Dec 03,2020'),
 });
 
-timer.init();
+timer.startTimer();
